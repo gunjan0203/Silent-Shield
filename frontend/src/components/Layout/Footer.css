@@ -1,0 +1,262 @@
+.footer {
+  /* background: #0b0b0f; */
+  color: white;
+  padding: 60px 0 30px;
+  margin-top: auto;
+  border-top: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.footer-section {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #ff2b2b;
+  text-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+.footer-description {
+  color: #aaa;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* Social icons */
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: rgba(255, 0, 0, 0.1);
+  border-radius: 50%;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  transition: all 0.3s;
+  border: 1px solid rgba(255, 0, 0, 0.25);
+}
+
+.social-link:hover {
+  background: linear-gradient(135deg, #7a0000, #ff0000);
+  transform: translateY(-3px);
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.6);
+}
+
+/* Section titles */
+.footer-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #ff2b2b;
+}
+
+/* Links */
+.footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+.footer-links a:hover {
+  color: #ffffff;
+}
+
+/* Emergency contacts */
+.emergency-contacts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  background: rgba(255, 0, 0, 0.08);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 0, 0, 0.25);
+}
+
+.contact-label {
+  font-size: 14px;
+  color: #bbb;
+}
+
+.contact-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+/* Middle download section */
+.footer-middle {
+  background: rgba(255, 0, 0, 0.05);
+  border-radius: 18px;
+  padding: 30px;
+  margin: 40px 0;
+  text-align: center;
+  border: 1px solid rgba(255, 0, 0, 0.2);
+}
+
+.app-download h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+
+/* Store buttons */
+.download-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.store-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 25px;
+  border: none;
+  border-radius: 14px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  min-width: 180px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+}
+
+.store-btn span {
+  font-size: 12px;
+  opacity: 0.85;
+}
+
+.store-btn strong {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* override default store colors to match theme */
+.google-play {
+  background: linear-gradient(135deg, #7a0000, #ff0000);
+}
+
+.app-store {
+  background: linear-gradient(135deg, #2b0000, #990000);
+}
+
+.store-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.6);
+}
+
+/* Bottom */
+.footer-bottom {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 0, 0, 0.15);
+  color: #777;
+  font-size: 14px;
+}
+
+.footer-note {
+  margin: 15px 0;
+  color: #aaa;
+  font-size: 13px;
+  line-height: 1.5;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.footer-bottom-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-bottom-links a {
+  color: #aaa;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 13px;
+}
+
+.footer-bottom-links a:hover {
+  color: #ffffff;
+}
+
+.separator {
+  color: #444;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer {
+    padding: 40px 0 20px;
+  }
+
+  .footer-top {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-middle {
+    padding: 20px;
+  }
+
+  .download-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .store-btn {
+    width: 100%;
+    max-width: 260px;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}

@@ -1,0 +1,178 @@
+/* Full page centering */
+body,
+html,
+#root {
+  height: 100%;
+  margin: 0;
+  background-image: url(https://lh3.googleusercontent.com/rd-gg-dl/AOI_d_9Ofgfz_5SoM8SdlMt6Kzi8AAeOwo3uytvgktq7Z2dfIUcdoMX5nr9f0lWDz0unqqZopwF9vedjBLO8LFq211RSNFUdx5o8DU6G6kJT-bUZHNVV3qlQ9MnRWOEfkldR60CeetkN9AXeV7zJq2KHMyBKyqv6QotRGzentg110AWKSkR4-0hcUAOrv3FICHCxCffjNkpeJc40Box2zwqCOx1RpB9dBPenQvIBH6zrWN1mox7-ugU0kavGOfBmdZeAsrpyFTHPop4HkCd8eXUN-x3ukaZUY_n_NogwSq5kTF_0YzDTxS4lL6VyD4GfqFrxvNsme-ig5C8Ix0g2SVx0IK-iq_HfBNvD3-qMty8a3PGqDAOguq90sbvV_rm4Q0l4lCkRDcTIzjLvDsPaK_hC7BSqJATVe6veROMqu377j7DNMDlZO7DuBSOkp6fxZthTVCaqSi2XfGfBSm8QPQqwz36QycZ-q5euXKJnBhOeqwcTg9R8zPyt16Kn8cOWs5VgnD0G0Oy2cY7Rbq8c9y-ZvxWPEDbVuAahD0B0X1FypPBE1UnzVlGS1a740IhzksmzCGamWWJ1bQFn-cYrhwW5_LnCUc4ujQumJ-9iEipoCHJI5_-7MHUYFo_vGa1kniqyrFXUcwFRhdTDXaxnh5KhNOzGkXQtVwxEGJVSOPGogLa1_g50P0hIMttjMUB3jYIoXjRX1yIj6vGwkP_NljsdJ4GW_rG8ELyB17L7ljuF1voUiTp_Qwg-g0TozyZJCdvcJ1IMxfFIp6xyCb9bonm2fcjrHsYNTqzr_QqA9Utb-bZH6C07hgdAXgGrBc2kbrI2-YIf0l9zKgO3Xh6EnXxlEsmD3pmqab5aGDf4kSwC7-ZFHqIciP58jbtO8wqqYjcqdQK0G-l0xX9qbeIWzKI5FbPEVQd02Bei5veRpS4rIJrp1_YfKsDe8LI5OWudvaGt_PsUxDLUooCbaFnURiw-mjoNl3B0qbApN5IZn_58KJqIXKawGTZwR8xR_0HGmjCjOoZCQu7URERjeI9BpYFcB2YKu6OPZGB5mqvxt03HVU2pPFlaIywuia3ITKX8fDmCsHLl2zA2heDapxLOI5xei3_SMnVtdVvoP6Kurv56i_JOwmbl0JK0aq1O1jrOVPLL9D9w9sbnVX4r6n2Un3gHLRf0u7OmIovW8s9cIGkL4Nkp2-kR-B0WE6tCCefo_YekH8eEFGu2Q4xCfBGhKm2w6L9fnprDPRNI7kmJ1dAUh3d-SjGoccadIqmYc74Qvg=s1024-rj);
+  background-size: cover;
+}
+
+.login-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at center, #1a0000 0%, #000000 70%);
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Card */
+.login-card {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto;
+  background: #0b0b0f;
+  border-radius: 24px;
+  padding: 32px;
+
+  /* internal scroll removed so everything is visible */
+  /* max-height and overflow-y removed */
+
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.25),
+    0 0 60px rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Title */
+.login-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #ff3b3b;
+  letter-spacing: 0.5px;
+  text-shadow:
+    0 0 6px rgba(255, 0, 0, 0.8),
+    0 0 18px rgba(255, 0, 0, 0.5);
+}
+
+/* Subtitle (Sign in to your account) */
+.login-subtitle {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 26px;
+  opacity: 0.95;
+}
+
+/* Form layout */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Labels */
+.form-group label {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 6px;
+  display: block;
+}
+
+/* Inputs */
+.form-group input {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: 14px;
+  border: 1px solid #333;
+  background: #050507;
+  color: #f5f5f5;
+  outline: none;
+  transition: all 0.2s ease;
+  box-sizing: border-box;
+}
+
+.form-group input:focus {
+  border-color: #ff2b2b;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+}
+
+/* Main login button */
+.login-button {
+  width: 100%;
+  padding: 14px 18px;
+  border-radius: 16px;
+  border: none;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  background: linear-gradient(135deg, #7a0000, #ff0000);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: 8px;
+  box-shadow: 0 0 12px rgba(255, 0, 0, 0.4);
+}
+
+.login-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 18px rgba(255, 0, 0, 0.7);
+}
+
+/* Links section */
+.login-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 16px;
+}
+
+/* Secondary buttons (links styled as buttons) */
+.login-links .link {
+  display: block;
+  text-align: center;
+  padding: 12px;
+  border-radius: 14px;
+  text-decoration: none;
+  font-weight: 600;
+  color: #ff4d4d;
+  background: rgba(255, 0, 0, 0.08);
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  transition: all 0.2s ease;
+}
+
+.login-links .link:hover {
+  background: rgba(255, 0, 0, 0.18);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.4);
+  transform: translateY(-1px);
+}
+
+/* Error message */
+.error-message {
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Small animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .login-card {
+    padding: 24px 18px;
+  }
+
+  .login-title {
+    font-size: 26px;
+  }
+}

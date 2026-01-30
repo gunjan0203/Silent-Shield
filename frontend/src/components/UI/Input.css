@@ -1,0 +1,346 @@
+.input-container {
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.input-container.full-width {
+  width: 100%;
+}
+
+.input-label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+  font-size: 14px;
+}
+
+.input-label .required-star {
+  color: #ff416c;
+  margin-left: 4px;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.input-wrapper.has-error .input-field {
+  border-color: #ff416c;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: white;
+  border: 2px solid #e1e5e9;
+  border-radius: 8px;
+  transition: all 0.3s;
+  font-family: inherit;
+}
+
+.input-field:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.input-field:disabled {
+  background-color: #f8f9fa;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.input-field::placeholder {
+  color: #aaa;
+}
+
+/* Icon Positioning */
+.input-wrapper.has-icon .input-field.icon-left {
+  padding-left: 45px;
+}
+
+.input-wrapper.has-icon .input-field.icon-right {
+  padding-right: 45px;
+}
+
+.input-icon-left,
+.input-icon-right {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 100%;
+  pointer-events: none;
+  color: #666;
+  font-size: 18px;
+}
+
+.input-icon-left {
+  left: 0;
+}
+
+.input-icon-right {
+  right: 0;
+}
+
+/* Error State */
+.input-error {
+  margin-top: 8px;
+  color: #ff416c;
+  font-size: 14px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.input-error::before {
+  content: "⚠️";
+  font-size: 12px;
+}
+
+/* Helper Text */
+.input-helper {
+  margin-top: 6px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+/* Textarea */
+.textarea-field {
+  min-height: 120px;
+  resize: vertical;
+  font-family: inherit;
+  line-height: 1.6;
+}
+
+/* Select Input */
+.select-field {
+  appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 16px;
+  padding-right: 45px;
+  cursor: pointer;
+}
+
+/* Checkbox & Radio */
+.checkbox-container,
+.radio-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox-input,
+.radio-input {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #667eea;
+}
+
+.checkbox-label,
+.radio-label {
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+/* File Input */
+.file-input-container {
+  position: relative;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  border: 2px dashed #667eea;
+  border-radius: 10px;
+  background: #f8f9ff;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  gap: 15px;
+}
+
+.file-upload-label:hover {
+  background: #eef2ff;
+  border-color: #5a67d8;
+}
+
+.upload-icon {
+  font-size: 40px;
+  color: #667eea;
+}
+
+.upload-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.upload-text strong {
+  color: #333;
+  font-size: 16px;
+}
+
+.upload-text span {
+  color: #666;
+  font-size: 14px;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background: white;
+  border-radius: 8px;
+  width: 100%;
+  border: 1px solid #e1e5e9;
+}
+
+.file-icon {
+  font-size: 24px;
+  color: #667eea;
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 14px;
+}
+
+.file-size {
+  color: #666;
+  font-size: 12px;
+}
+
+.remove-file-btn {
+  background: none;
+  border: none;
+  color: #ff416c;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.remove-file-btn:hover {
+  background: #ffebee;
+}
+
+/* Password Input */
+.password-toggle {
+  position: absolute;
+  right: 16px;
+  background: none;
+  border: none;
+  color: #666;
+  cursor: pointer;
+  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.password-toggle:hover {
+  color: #333;
+}
+
+/* Input Groups */
+.input-group {
+  display: flex;
+  gap: 0;
+}
+
+.input-group .input-field {
+  border-radius: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.input-group .input-field:focus {
+  z-index: 2;
+}
+
+.input-group .input-field:first-child {
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.input-group .input-field:last-child {
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.input-group-prepend,
+.input-group-append {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  background: #f8f9fa;
+  border: 2px solid #e1e5e9;
+  color: #666;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+.input-group-prepend {
+  border-right: none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+}
+
+.input-group-append {
+  border-left: none;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .input-field {
+    padding: 10px 14px;
+    font-size: 15px;
+  }
+  
+  .file-upload-label {
+    padding: 30px 15px;
+  }
+  
+  .upload-icon {
+    font-size: 32px;
+  }
+}

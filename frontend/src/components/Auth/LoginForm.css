@@ -1,0 +1,213 @@
+/* ================================
+   LOGIN – STRANGER THINGS THEME v2
+   ================================ */
+
+/* Full page feel (safe, scoped) */
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  /* background-image: url(https://lh3.googleusercontent.com/rd-gg-dl/AOI_d_9Ofgfz_5SoM8SdlMt6Kzi8AAeOwo3uytvgktq7Z2dfIUcdoMX5nr9f0lWDz0unqqZopwF9vedjBLO8LFq211RSNFUdx5o8DU6G6kJT-bUZHNVV3qlQ9MnRWOEfkldR60CeetkN9AXeV7zJq2KHMyBKyqv6QotRGzentg110AWKSkR4-0hcUAOrv3FICHCxCffjNkpeJc40Box2zwqCOx1RpB9dBPenQvIBH6zrWN1mox7-ugU0kavGOfBmdZeAsrpyFTHPop4HkCd8eXUN-x3ukaZUY_n_NogwSq5kTF_0YzDTxS4lL6VyD4GfqFrxvNsme-ig5C8Ix0g2SVx0IK-iq_HfBNvD3-qMty8a3PGqDAOguq90sbvV_rm4Q0l4lCkRDcTIzjLvDsPaK_hC7BSqJATVe6veROMqu377j7DNMDlZO7DuBSOkp6fxZthTVCaqSi2XfGfBSm8QPQqwz36QycZ-q5euXKJnBhOeqwcTg9R8zPyt16Kn8cOWs5VgnD0G0Oy2cY7Rbq8c9y-ZvxWPEDbVuAahD0B0X1FypPBE1UnzVlGS1a740IhzksmzCGamWWJ1bQFn-cYrhwW5_LnCUc4ujQumJ-9iEipoCHJI5_-7MHUYFo_vGa1kniqyrFXUcwFRhdTDXaxnh5KhNOzGkXQtVwxEGJVSOPGogLa1_g50P0hIMttjMUB3jYIoXjRX1yIj6vGwkP_NljsdJ4GW_rG8ELyB17L7ljuF1voUiTp_Qwg-g0TozyZJCdvcJ1IMxfFIp6xyCb9bonm2fcjrHsYNTqzr_QqA9Utb-bZH6C07hgdAXgGrBc2kbrI2-YIf0l9zKgO3Xh6EnXxlEsmD3pmqab5aGDf4kSwC7-ZFHqIciP58jbtO8wqqYjcqdQK0G-l0xX9qbeIWzKI5FbPEVQd02Bei5veRpS4rIJrp1_YfKsDe8LI5OWudvaGt_PsUxDLUooCbaFnURiw-mjoNl3B0qbApN5IZn_58KJqIXKawGTZwR8xR_0HGmjCjOoZCQu7URERjeI9BpYFcB2YKu6OPZGB5mqvxt03HVU2pPFlaIywuia3ITKX8fDmCsHLl2zA2heDapxLOI5xei3_SMnVtdVvoP6Kurv56i_JOwmbl0JK0aq1O1jrOVPLL9D9w9sbnVX4r6n2Un3gHLRf0u7OmIovW8s9cIGkL4Nkp2-kR-B0WE6tCCefo_YekH8eEFGu2Q4xCfBGhKm2w6L9fnprDPRNI7kmJ1dAUh3d-SjGoccadIqmYc74Qvg=s1024-rj); 
+   background-size: cover;
+   background-position: center;  */
+}
+
+/* Container */
+.auth-form-container {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Title – Silent Shield */
+.auth-form-title {
+  font-size: 32px;
+  font-weight: 900;
+  text-align: center;
+  margin-bottom: 4px;
+  color: #ff3b3b;
+  letter-spacing: 0.5px;
+  text-shadow:
+    0 0 6px rgba(255, 0, 0, 0.8),
+    0 0 18px rgba(255, 0, 0, 0.5);
+}
+
+/* Subtitle */
+.auth-form-subtitle {
+  text-align: center;
+  color: #ffffff;
+  font-size: 14px;
+  margin-bottom: 26px;
+  opacity: 0.95;
+}
+
+/* Card */
+.auth-form {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 24px;
+  background: #0b0b0f;
+  border-radius: 24px;
+  padding: 32px;
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  box-shadow:
+    0 0 20px rgba(255, 0, 0, 0.25),
+    0 0 60px rgba(255, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* ================================
+   INPUT FIXES (important)
+   ================================ */
+
+/* All inputs inside login card */
+.auth-form input {
+  background: #050507 !important;
+  border: 1px solid #333;
+  color: #f5f5f5;
+  border-radius: 14px;
+  padding: 14px 16px 14px 46px; /* space for icon */
+  transition: all 0.2s ease;
+}
+
+/* Focus */
+.auth-form input:focus {
+  outline: none;
+  border-color: #ff2b2b;
+  box-shadow: 0 0 0 2px rgba(255, 0, 0, 0.25);
+}
+
+/* Placeholder spacing + color */
+.auth-form input::placeholder {
+  color: #aaa;
+  opacity: 0.9;
+}
+
+/* ================================
+   ERROR MESSAGE
+   ================================ */
+
+.auth-form-error {
+  background: rgba(255, 0, 0, 0.15);
+  border: 1px solid rgba(255, 0, 0, 0.4);
+  color: #ff6b6b;
+  padding: 12px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+
+/* ================================
+   OPTIONS
+   ================================ */
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 18px 0;
+  gap: 10px;
+}
+
+.remember-me {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.remember-me input[type="checkbox"] {
+  accent-color: #ff3b3b;
+}
+
+/* Forgot password */
+.forgot-password-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.forgot-password-btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+/* ================================
+   FOOTER LINKS
+   ================================ */
+
+.auth-form-footer {
+  text-align: center;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.switch-auth-text {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 14px;
+}
+
+.switch-auth-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 0;
+}
+
+.switch-auth-btn:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.switch-auth-btn.volunteer {
+  color: #f6ad55;
+}
+
+/* Guest access */
+.guest-access {
+  margin-top: 22px;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.guest-access p {
+  color: #ccc;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .auth-form {
+    padding: 24px 18px;
+  }
+
+  .auth-form-title {
+    font-size: 26px;
+  }
+}

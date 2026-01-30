@@ -1,0 +1,430 @@
+.volunteer-signup-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 20px;
+}
+
+.volunteer-signup-container {
+  width: 100%;
+  max-width: 700px;
+}
+
+.volunteer-signup-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.5s ease-out;
+}
+
+.volunteer-header {
+  text-align: center;
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.volunteer-badge {
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+  color: white;
+  padding: 8px 25px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  box-shadow: 0 5px 15px rgba(214, 158, 46, 0.3);
+}
+
+.volunteer-logo {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: #d69e2e;
+}
+
+.volunteer-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.volunteer-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 0;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.volunteer-form {
+  margin-bottom: 30px;
+}
+
+.form-section {
+  margin-bottom: 25px;
+}
+
+.section-label {
+  display: block;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.required-star {
+  color: #ff416c;
+}
+
+.file-upload-section {
+  background: #f8f9ff;
+  border-radius: 15px;
+  padding: 25px;
+  border: 2px dashed #667eea;
+  margin: 20px 0;
+}
+
+.file-input-wrapper {
+  position: relative;
+  cursor: pointer;
+}
+
+.file-input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
+}
+
+.file-upload-label {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  border: 3px dashed #667eea;
+  border-radius: 12px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+  text-align: center;
+  gap: 20px;
+}
+
+.file-upload-label:hover {
+  background: #eef2ff;
+  border-color: #5a67d8;
+}
+
+.upload-icon {
+  font-size: 60px;
+  color: #667eea;
+  opacity: 0.7;
+}
+
+.upload-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.upload-text strong {
+  color: #333;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.upload-text span {
+  color: #666;
+  font-size: 14px;
+}
+
+.file-preview {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  border: 2px solid #667eea;
+  width: 100%;
+}
+
+.file-icon {
+  font-size: 40px;
+  color: #667eea;
+  opacity: 0.8;
+}
+
+.file-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.file-name {
+  font-weight: 500;
+  color: #333;
+  font-size: 16px;
+  word-break: break-all;
+}
+
+.file-size {
+  color: #666;
+  font-size: 14px;
+}
+
+.remove-file-btn {
+  background: none;
+  border: none;
+  color: #ff416c;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 6px;
+  transition: background 0.3s;
+}
+
+.remove-file-btn:hover {
+  background: #ffebee;
+}
+
+.file-requirements {
+  margin-top: 15px;
+  color: #666;
+  font-size: 13px;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.volunteer-agreement {
+  margin: 30px 0;
+  padding: 25px;
+  background: #fffaf0;
+  border-radius: 15px;
+  border: 2px solid #ffe4b5;
+}
+
+.agreement-checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.agreement-checkbox input {
+  margin-top: 3px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #d69e2e;
+}
+
+.agreement-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.volunteer-button {
+  width: 100%;
+  margin-top: 10px;
+  background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+}
+
+.volunteer-button:hover:not(:disabled) {
+  background: linear-gradient(135deg, #b7791f 0%, #9c6c1c 100%);
+}
+
+.volunteer-benefits {
+  background: #f8f9ff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 30px 0;
+  border: 2px solid #eef2ff;
+}
+
+.volunteer-benefits h4 {
+  color: #667eea;
+  font-size: 20px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.benefit-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  text-align: center;
+  transition: all 0.3s;
+  border: 2px solid transparent;
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+  border-color: #667eea;
+  box-shadow: 0 15px 30px rgba(102, 126, 234, 0.1);
+}
+
+.benefit-icon {
+  font-size: 40px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.benefit-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 8px;
+}
+
+.benefit-description {
+  font-size: 13px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.volunteer-footer {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid #e1e5e9;
+}
+
+.regular-signup-link {
+  display: inline-block;
+  margin-top: 15px;
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 15px;
+  padding: 10px 20px;
+  border: 2px solid #667eea;
+  border-radius: 25px;
+  transition: all 0.3s;
+}
+
+.regular-signup-link:hover {
+  background: #667eea;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.volunteer-process {
+  margin-top: 40px;
+  padding: 30px;
+  background: #f0fff4;
+  border-radius: 15px;
+  border: 2px solid #c6f6d5;
+}
+
+.process-title {
+  color: #2f855a;
+  font-size: 18px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+.process-step {
+  text-align: center;
+  padding: 20px;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.step-number {
+  width: 30px;
+  height: 30px;
+  background: #38a169;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  margin: 0 auto 15px;
+}
+
+.step-title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.step-description {
+  font-size: 12px;
+  color: #666;
+  line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .volunteer-signup-card {
+    padding: 30px;
+  }
+  
+  .volunteer-title {
+    font-size: 28px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .process-steps {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .volunteer-signup-card {
+    padding: 25px 20px;
+  }
+  
+  .volunteer-title {
+    font-size: 24px;
+  }
+  
+  .volunteer-logo {
+    font-size: 40px;
+  }
+  
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .file-upload-label {
+    padding: 30px 20px;
+  }
+  
+  .upload-icon {
+    font-size: 40px;
+  }
+}

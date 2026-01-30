@@ -1,0 +1,218 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  position: relative;
+  overflow: hidden;
+  gap: 10px;
+  min-height: 48px;
+}
+
+.button:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.3);
+}
+
+.button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  transform: none !important;
+}
+
+/* Button Variants */
+.button-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.button-primary:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(102, 126, 234, 0.3);
+}
+
+.button-secondary {
+  background: transparent;
+  color: #667eea;
+  border-color: #667eea;
+}
+
+.button-secondary:hover:not(:disabled) {
+  background: #667eea;
+  color: white;
+}
+
+.button-danger {
+  background: linear-gradient(135deg, #ff416c 0%, #ff4b2b 100%);
+  color: white;
+}
+
+.button-danger:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(255, 65, 108, 0.3);
+}
+
+.button-success {
+  background: linear-gradient(135deg, #38a169 0%, #2f855a 100%);
+  color: white;
+}
+
+.button-success:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(56, 161, 105, 0.3);
+}
+
+.button-warning {
+  background: linear-gradient(135deg, #d69e2e 0%, #b7791f 100%);
+  color: white;
+}
+
+.button-warning:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(214, 158, 46, 0.3);
+}
+
+/* Button Sizes */
+.button-small {
+  padding: 8px 16px;
+  font-size: 14px;
+  min-height: 36px;
+}
+
+.button-medium {
+  padding: 12px 24px;
+  font-size: 16px;
+  min-height: 48px;
+}
+
+.button-large {
+  padding: 16px 32px;
+  font-size: 18px;
+  min-height: 56px;
+}
+
+/* Button Width */
+.button-full-width {
+  width: 100%;
+}
+
+/* Loading State */
+.button-loading {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.button-spinner {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: button-spin 1s linear infinite;
+  margin-right: 10px;
+}
+
+@keyframes button-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Ripple Effect */
+.button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background-image: radial-gradient(circle, #fff 10%, transparent 10.01%);
+  background-repeat: no-repeat;
+  background-position: 50%;
+  transform: scale(10, 10);
+  opacity: 0;
+  transition: transform .5s, opacity 1s;
+}
+
+.button:active::after {
+  transform: scale(0, 0);
+  opacity: .3;
+  transition: 0s;
+}
+
+/* Icon Positioning */
+.button-icon-left {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.button-icon-right {
+  display: flex;
+  align-items: center;
+  margin-left: 8px;
+}
+
+/* Button Groups */
+.button-group {
+  display: flex;
+  gap: 10px;
+}
+
+.button-group .button {
+  flex: 1;
+}
+
+.button-group-vertical {
+  flex-direction: column;
+}
+
+/* Floating Action Button */
+.button-floating {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 100;
+}
+
+.button-floating:hover {
+  transform: scale(1.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 20px;
+    font-size: 15px;
+    min-height: 44px;
+  }
+  
+  .button-large {
+    padding: 14px 28px;
+    font-size: 16px;
+  }
+  
+  .button-group {
+    flex-direction: column;
+  }
+}

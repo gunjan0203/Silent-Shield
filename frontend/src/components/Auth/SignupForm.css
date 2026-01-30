@@ -1,0 +1,216 @@
+/* ================================
+   SIGNUP FORM – STRANGER THINGS THEME
+   ================================ */
+
+.auth-form-container {
+  width: 100%;
+  max-width: 440px;
+  margin: 0 auto;
+}
+
+/* Title */
+.auth-form-title {
+  font-size: 32px;
+  font-weight: 800;
+  margin-bottom: 6px;
+  text-align: center;
+  color: #ff3b3b;
+  text-shadow:
+    0 0 6px rgba(255, 0, 0, 0.7),
+    0 0 16px rgba(255, 0, 0, 0.4);
+}
+
+/* Subtitle */
+.auth-form-subtitle {
+  font-size: 14px;
+  color: #e0e0e0;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+/* Card */
+.auth-form {
+  background: #0b0b0f;
+  border-radius: 20px;
+  padding: 32px;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255, 0, 0, 0.25);
+  box-shadow:
+    0 0 18px rgba(255, 0, 0, 0.25),
+    0 0 50px rgba(255, 0, 0, 0.15);
+  animation: fadeIn 0.4s ease-out;
+}
+
+/* Rows */
+.form-row {
+  margin-bottom: 18px;
+}
+
+/* Labels */
+.form-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #ccc;
+  margin-bottom: 8px;
+  display: block;
+}
+
+/* Role selection */
+.role-selection {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.role-option {
+  background: #050507;
+  border: 1px solid #333;
+  border-radius: 14px;
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.role-option:hover {
+  border-color: #ff3b3b;
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.3);
+}
+
+.role-option.selected {
+  border-color: #ff3b3b;
+  background: rgba(255, 0, 0, 0.08);
+}
+
+.role-option input {
+  display: none;
+}
+
+.role-content {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.role-icon {
+  font-size: 24px;
+}
+
+.role-title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.role-desc {
+  font-size: 12px;
+  color: #aaa;
+}
+
+/* Agreement */
+.form-agreement {
+  margin: 22px 0;
+  padding: 16px;
+  background: rgba(255, 0, 0, 0.08);
+  border-left: 4px solid #ff3b3b;
+  border-radius: 10px;
+}
+
+.form-agreement label {
+  display: flex;
+  gap: 10px;
+  font-size: 13px;
+  color: #ddd;
+  line-height: 1.5;
+}
+
+.form-agreement input {
+  accent-color: #ff3b3b;
+}
+
+/* Terms links */
+.terms-link {
+  color: #ff4d4d;
+  font-weight: 500;
+}
+
+.terms-link:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Messages */
+.auth-form-error {
+  background: rgba(255, 0, 0, 0.15);
+  color: #ff6b6b;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.auth-form-success {
+  background: rgba(0, 255, 150, 0.12);
+  color: #68f0b0;
+  padding: 14px;
+  border-radius: 10px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+/* Footer */
+.auth-form-footer {
+  text-align: center;
+  padding-top: 22px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.switch-auth-text {
+  font-size: 14px;
+  color: #ccc;
+}
+
+.switch-auth-btn {
+  background: none;
+  border: none;
+  color: #ff4d4d;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.switch-auth-btn:hover {
+  text-decoration: underline;
+  color: #fff;
+}
+
+/* Signup benefits */
+.signup-benefits {
+  margin-top: 22px;
+  padding: 20px;
+  background: #050507;
+  border-radius: 14px;
+  border: 1px solid #333;
+}
+
+.signup-benefits h4 {
+  color: #ff3b3b;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+.signup-benefits li {
+  color: #ddd;
+  font-size: 13px;
+  margin-bottom: 8px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(14px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
