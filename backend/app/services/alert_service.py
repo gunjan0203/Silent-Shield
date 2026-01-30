@@ -4,7 +4,7 @@ from app.models.volunteer import Volunteer
 from app.models.alert_volunteer import AlertVolunteer
 from app.utils.geo import haversine
 
-# from backend.app.models import alert
+# from backend.apps.models import alert
 
 MAX_RADIUS_KM = 20
 MIN_RADIUS_KM = 0
